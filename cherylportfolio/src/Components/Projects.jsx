@@ -18,7 +18,7 @@ const Projects = () => {
       title: "Smart Goal Planner",
       description: "React app for tracking financial goals with progress charts and deadline alerts",
       tech: ["React", "JavaScript", "CSS3", "JSON Server"],
-      role: "Full-Stack Developer",
+      role: "Frontend Developer",
       github: "https://github.com/cherylmbani/phase-2-week-2-code-challenge-sgp",
       demo: "https://elaborate-cocada-1d756a.netlify.app/goals"
     },
