@@ -27,7 +27,7 @@ const Projects = () => {
       title: "SheCare.Africa",
       description: "Frontend development for real company platform supporting women's initiatives",
       tech: ["React", "HTML5", "CSS3", "Git"],
-      role: "Frontend Contributor",
+      role: "Frontend Lead",
       github: "https://github.com/cassyomondi/SheCare-ECI-Project/tree/main",
       demo: "#"
     },
