@@ -8,7 +8,7 @@ const Projects = () => {
       id: 1,
       title: "TravelBuddy API",
       description: "Backend lead for collaborative travel planning app with user authentication and group management",
-      tech: ["Python", "Flask", "SQLAlchemy", "REST API"],
+      tech: ["React", "Flask", "SQLAlchemy", "REST API"],
       role: "Backend Lead",
       github: "https://github.com/Mathu025/react-flask-project",
       demo: "https://react-flask-project-5.onrender.com"

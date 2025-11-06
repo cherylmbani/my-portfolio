@@ -55,19 +55,15 @@ const Hero = () => {
           <div className="hero-visual">
             <div className="profile-placeholder">
               <div className="profile-image">
-                {/* Add your photo here later */}
-                <span>Your Photo</span>
+                <img src="/images/profile.jpg" alt="Cheryl Mbani"/>
+                
               </div>
             </div>
           </div>
 
         </div>
 
-        {/* Scroll Indicator */}
-        <div className="scroll-indicator">
-          <span>Scroll to explore</span>
-          <div className="scroll-arrow"></div>
-        </div>
+        
       </div>
     </section>
   );
