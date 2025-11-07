@@ -4,20 +4,42 @@ import '../Styles/Skills.css';
 const Skills = () => {
   const skillsData = {
     frontend: [
-      { name: 'React', level: 90, icon: '⚛️', color: '#61DAFB' },
-      { name: 'JavaScript', level: 80, icon: '🟨', color: '#F7DF1E' },
-      { name: 'HTML5', level: 90, icon: '🌐', color: '#E34F26' },
-      { name: 'CSS3', level: 88, icon: '🎨', color: '#1572B6' }
+      { name: 'React', level: 'Proficient', icon: '⚛️', color: '#61DAFB' },
+      { name: 'JavaScript', level: 'Proficient', icon: '🟨', color: '#F7DF1E' },
+      { name: 'HTML5', level: 'Advanced', icon: '🌐', color: '#E34F26' },
+      { name: 'CSS3', level: 'Proficient', icon: '🎨', color: '#1572B6' }
     ],
     backend: [
-      { name: 'Python', level: 95, icon: '🐍', color: '#3776AB' },
-      { name: 'Flask', level: 95, icon: '🔥', color: '#000000' }
+      { name: 'Python', level: 'Proficient', icon: '🐍', color: '#3776AB' },
+      { name: 'Flask', level: 'Proficient', icon: '🔥', color: '#000000' },
+      { name: 'SQL', level: 'Comfortable', icon: '🗃️', color: '#336791' }
     ],
     tools: [
-      { name: 'Git', level: 82, icon: '📚', color: '#F05032' },
-      { name: 'VS Code', level: 90, icon: '💻', color: '#007ACC' },
-      { name: 'Figma', level: 75, icon: '🎯', color: '#F24E1E' }
+      { name: 'Git', level: 'Proficient', icon: '📚', color: '#F05032' },
+      { name: 'VS Code', level: 'Advanced', icon: '💻', color: '#007ACC' },
+      { name: 'Figma', level: 'Comfortable', icon: '🎯', color: '#F24E1E' },
+      { name: 'ArcGIS', level: 'Advanced', icon: '🗺️', color: '#007ACC' }
     ]
+  };
+
+  const getProficiencyWidth = (level) => {
+    const widths = {
+      'Advanced': 90,
+      'Proficient': 75,
+      'Comfortable': 60,
+      'Familiar': 40
+    };
+    return widths[level] || 50;
+  };
+
+  const getProficiencyDescription = (level) => {
+    const descriptions = {
+      'Advanced': 'Strong understanding, can build complex projects',
+      'Proficient': 'Comfortable building real applications',
+      'Comfortable': 'Good understanding, can work independently',
+      'Familiar': 'Basic understanding, can read and modify code'
+    };
+    return descriptions[level];
   };
 
   return (
@@ -65,16 +87,18 @@ const Skills = () => {
                         <span className="skill-icon">{skill.icon}</span>
                         <span className="skill-name">{skill.name}</span>
                       </div>
-                      <span className="skill-percentage">{skill.level}%</span>
+                      <span className={`skill-level ${skill.level.toLowerCase()}`}>
+                        {skill.level}
+                      </span>
                     </div>
                     <div className="skill-bar">
                       <div 
                         className="skill-progress" 
                         style={{ 
-                          width: `${skill.level}%`,
+                          width: `${getProficiencyWidth(skill.level)}%`,
                           backgroundColor: skill.color
                         }}
-                        data-level={skill.level}
+                        title={getProficiencyDescription(skill.level)}
                       >
                         <div className="progress-glow"></div>
                       </div>
@@ -98,16 +122,18 @@ const Skills = () => {
                         <span className="skill-icon">{skill.icon}</span>
                         <span className="skill-name">{skill.name}</span>
                       </div>
-                      <span className="skill-percentage">{skill.level}%</span>
+                      <span className={`skill-level ${skill.level.toLowerCase()}`}>
+                        {skill.level}
+                      </span>
                     </div>
                     <div className="skill-bar">
                       <div 
                         className="skill-progress" 
                         style={{ 
-                          width: `${skill.level}%`,
+                          width: `${getProficiencyWidth(skill.level)}%`,
                           backgroundColor: skill.color
                         }}
-                        data-level={skill.level}
+                        title={getProficiencyDescription(skill.level)}
                       >
                         <div className="progress-glow"></div>
                       </div>
@@ -131,16 +157,18 @@ const Skills = () => {
                         <span className="skill-icon">{skill.icon}</span>
                         <span className="skill-name">{skill.name}</span>
                       </div>
-                      <span className="skill-percentage">{skill.level}%</span>
+                      <span className={`skill-level ${skill.level.toLowerCase()}`}>
+                        {skill.level}
+                      </span>
                     </div>
                     <div className="skill-bar">
                       <div 
                         className="skill-progress" 
                         style={{ 
-                          width: `${skill.level}%`,
+                          width: `${getProficiencyWidth(skill.level)}%`,
                           backgroundColor: skill.color
                         }}
-                        data-level={skill.level}
+                        title={getProficiencyDescription(skill.level)}
                       >
                         <div className="progress-glow"></div>
                       </div>
@@ -150,6 +178,29 @@ const Skills = () => {
               </div>
             </div>
 
+          </div>
+
+          {/* Proficiency Legend */}
+          <div className="proficiency-legend">
+            <h4>Proficiency Levels</h4>
+            <div className="legend-items">
+              <div className="legend-item">
+                <div className="legend-color advanced"></div>
+                <span>Advanced - Strong understanding, can build complex projects</span>
+              </div>
+              <div className="legend-item">
+                <div className="legend-color proficient"></div>
+                <span>Proficient - Comfortable building real applications</span>
+              </div>
+              <div className="legend-item">
+                <div className="legend-color comfortable"></div>
+                <span>Comfortable - Good understanding, can work independently</span>
+              </div>
+              <div className="legend-item">
+                <div className="legend-color familiar"></div>
+                <span>Familiar - Basic understanding, can read and modify code</span>
+              </div>
+            </div>
           </div>
 
           {/* Additional Skills Tags */}

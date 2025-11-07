@@ -12,7 +12,7 @@ const About = () => {
             <h2 className="section-title">About Me</h2>
             <div className="divider"></div>
             <p className="section-subtitle">
-              Where <span className="highlight">technology meets impact</span> across multiple domains
+              Aspiring software engineer <span className="highlight">eager to learn</span> and create impact
             </p>
           </div>
 
@@ -22,36 +22,36 @@ const About = () => {
               <div className="text-card">
                 <div className="card-header">
                   <h3>Cheryl Mbani</h3>
-                  <p className="role-tag">Software Engineer</p>
+                  <p className="role-tag">Computer Science Student</p>
                 </div>
 
                 <div className="card-content">
                   <p className="intro-text">
-                    I'm a passionate software engineer who bridges the gap between 
-                    <strong> geospatial technology</strong>, <strong>financial innovation</strong>, and 
-                    <strong> agricultural solutions</strong>, creating applications that are both functional and impactful.
+                    I'm a passionate computer science student with hands-on experience in full-stack development, 
+                    eager to apply my skills to solve real-world problems through technology.
                   </p>
 
                   <div className="story-section">
                     <h4>My Journey</h4>
                     <p>
-                      My interest in software engineering was sparked through Geographic Information Systems (GIS). 
-                      Working with tools like <strong>ArcGIS</strong> and <strong>QGIS</strong> revealed how technology 
-                      could solve complex spatial problems and visualize data in meaningful ways.
+                      My interest in technology began with Geographic Information Systems (GIS), where working with tools like 
+                      <strong> ArcGIS</strong> and <strong>QGIS</strong> sparked my curiosity about how software can transform 
+                      complex data into meaningful solutions. This inspired me to pursue computer science and develop my 
+                      programming skills.
                     </p>
                     <p>
-                      This foundation in spatial thinking expanded into financial technology and agricultural tech, 
-                      where I discovered how software can transform traditional industries through innovation and 
-                      data-driven solutions.
+                      Through my coursework and personal projects, I've built applications across different domains, 
+                      from data visualization tools to web applications, constantly expanding my technical capabilities 
+                      and problem-solving approach.
                     </p>
                   </div>
 
                   <div className="passion-section">
-                    <h4>What Drives Me</h4>
+                    <h4>What I'm Seeking</h4>
                     <p>
-                      I'm passionate about creating applications that solve real-world problems across multiple sectors. 
-                      My unique background allows me to approach challenges from different perspectives, whether it's 
-                      mapping spatial data, building financial tools, or developing agricultural solutions.
+                      I'm looking for an internship where I can contribute my development skills while learning from 
+                      experienced engineers. I'm excited to tackle new challenges, collaborate on meaningful projects, 
+                      and grow as a software developer.
                     </p>
                   </div>
                 </div>
@@ -73,18 +73,12 @@ const About = () => {
                 </div>
               </div>
 
-              {/* Interests */}
+              {/* Focus Areas */}
               <div className="interests-card">
-                <h3>My Focus Areas</h3>
+                <h3>My Interests</h3>
                 <div className="interests-grid">
                   <div className="interest-item">
-                    <span>🌍 Geospatial Tech</span>
-                  </div>
-                  <div className="interest-item">
-                    <span>💳 Financial Tech</span>
-                  </div>
-                  <div className="interest-item">
-                    <span>🌱 Agricultural Tech</span>
+                    <span>💻 Full-Stack Development</span>
                   </div>
                   <div className="interest-item">
                     <span>🎨 UI/UX Design</span>
@@ -95,24 +89,30 @@ const About = () => {
                   <div className="interest-item">
                     <span>💡 Problem Solving</span>
                   </div>
+                  <div className="interest-item">
+                    <span>📊 Data Visualization</span>
+                  </div>
+                  <div className="interest-item">
+                    <span>🔍 Learning New Technologies</span>
+                  </div>
                 </div>
               </div>
 
-              {/* Domain Expertise */}
+              {/* Project Experience */}
               <div className="domains-card">
-                <h3>Domain Expertise</h3>
+                <h3>Areas of Exploration</h3>
                 <div className="domains-list">
                   <div className="domain-item">
-                    <h4>FinTech</h4>
-                    <p>Building financial applications, payment systems, and investment tools</p>
+                    <h4>Web Development</h4>
+                    <p>Building responsive web applications with modern frameworks</p>
                   </div>
                   <div className="domain-item">
-                    <h4>AgriTech</h4>
-                    <p>Developing solutions for farming, crop monitoring, and agricultural data</p>
+                    <h4>Data Solutions</h4>
+                    <p>Creating applications that process and visualize complex data</p>
                   </div>
                   <div className="domain-item">
-                    <h4>Geo-Spatial</h4>
-                    <p>Creating mapping applications and location-based services</p>
+                    <h4>User-Centered Design</h4>
+                    <p>Developing intuitive interfaces that prioritize user experience</p>
                   </div>
                 </div>
               </div>
