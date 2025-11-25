@@ -57,6 +57,16 @@ const Projects = () => {
       role: "Backend Developer",
       github: "https://github.com/cherylmbani/phase-3-project-mentorship-manager",
       demo: "#"
+    },
+    {
+      id:7,
+      title: "Financial Tracking System",
+      description: "A financial tracker with an AI chatbot for insights and STK Push for seamless, automated payments and logging.",
+      tech: ["Python", "React", "OpenAI API", "Safaricom Daraja API"],
+      role: "Full Stack Developer",
+      github: "https://github.com/cherylmbani/personal-financial-tracking-system",
+      demo: "#"
+
     }
   ];
 
